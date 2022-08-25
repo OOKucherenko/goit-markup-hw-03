@@ -23,6 +23,25 @@ body{
 
 .header{
    color:var(--header-color);
+  
+
+}
+
+.container>.nav {
+   display: flex;
+   align-items: center;
+    
+}
+
+.container>.list {
+   display: flex;
+   align-items: center;
+    
+}
+
+.container{
+   width: 1200px;
+   margin: auto;
 }
 
 .logo {
