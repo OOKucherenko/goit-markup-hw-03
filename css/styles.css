@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
 :root{
    /*Fonts*/
    --main-font: Roboto, sans-serif;
@@ -17,14 +23,13 @@
 body{
    font-family: var(--main-font);
    color: var(--main-txt-сl);
+   outline: 2px solid red;
  }
 
 /*header*/
 
 .header{
    color:var(--header-color);
-  
-
 }
 
 .container>.nav {
@@ -41,7 +46,10 @@ body{
 
 .container{
    width: 1200px;
-   margin: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   display: flex;
+   outline: 2px solid red;
 }
 
 .logo {
@@ -68,6 +76,12 @@ a {
    text-decoration: none;
  }
 
+ .list{
+   display: flex;
+   margin-top: 32px;
+   margin-bottom: 32px;
+ }
+
 .icon-blue{
    font-weight: 500;
    font-size: 14px;
@@ -83,6 +97,8 @@ a {
    line-height: calc(16/14);
    letter-spacing: 0.02em;
    color:var(--icon-text);
+   padding-left: 50px;
+   padding-right: 50px;
 }
 
 
@@ -106,6 +122,8 @@ ul {list-style: none;}
    font-size: 14px;
    line-height: calc(16/14);
    letter-spacing: 0.02em;
+   padding-right: 50px;
+  
    color:var(--link-text);
 }
 
@@ -116,6 +134,7 @@ ul {list-style: none;}
    line-height: calc(16/14);
    letter-spacing: 0.02em;
    color:var(--link-text);
+    
 }
 
 .icon-port{
@@ -169,6 +188,11 @@ ul {list-style: none;}
    line-height: calc(30/16);
    letter-spacing: 0.06em;
    color: var(--color-text);
+}
+
+.section{
+   padding-top: 94px;
+   padding-bottom: 94px;
 }
 
 /*h2*/
