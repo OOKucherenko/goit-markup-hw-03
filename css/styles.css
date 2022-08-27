@@ -184,7 +184,7 @@ ul {list-style: none;}
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color:var(--color-text);
-   
+   margin-bottom: 30px;
 }
 
 .button{
@@ -201,8 +201,9 @@ ul {list-style: none;}
    min-width: 216px;
    min-height: 50px;
    text-align: center;
-   display: inline-block;
-   border-radius: 5px;
+   align-items: center;
+   display: flex;
+   margin: auto;
 }
 
 .section{
