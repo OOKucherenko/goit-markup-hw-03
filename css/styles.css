@@ -30,26 +30,29 @@ body{
 
 .header{
    color:var(--header-color);
+   display: flex;
 }
 
-.container>.nav {
-   display: flex;
-   align-items: center;
-    
-}
-
-.container>.list {
-   display: flex;
-   align-items: center;
-    
-}
+ 
 
 .container{
    width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
    display: flex;
+   align-items: center;
    outline: 2px solid red;
+}
+
+.container>.nav {
+   display: flex;
+   align-items: center;
+
+}
+
+.container>.list {
+   display: flex;
+   align-items: center;
 }
 
 .logo {
@@ -59,9 +62,8 @@ body{
    line-height: calc(31/26);
    letter-spacing: 0.03em;
    color:var(--logo-text);
+   margin-right: 93px;
 }
-
- 
 
 .logo-web{
    font-family: Raleway;
@@ -80,6 +82,7 @@ a {
    display: flex;
    margin-top: 32px;
    margin-bottom: 32px;
+   margin-left: auto;
  }
 
 .icon-blue{
@@ -98,7 +101,7 @@ a {
    letter-spacing: 0.02em;
    color:var(--icon-text);
    padding-left: 50px;
-   padding-right: 50px;
+   
 }
 
 
@@ -109,6 +112,7 @@ a {
    line-height: calc(16/14);
    letter-spacing: 0.02em;
    color:var(--icon-text);
+   padding-left: 50px;
 }
 
 ul {list-style: none;}
@@ -142,7 +146,8 @@ ul {list-style: none;}
    font-size: 14px;
    line-height: calc(16/14);
    letter-spacing: 0.02em;
-   color:var(--logo-text);  
+   color:var(--logo-text); 
+   padding-left: 50px;
 }
 
 /*main*/
@@ -163,6 +168,10 @@ ul {list-style: none;}
 
 .section-main {
    background:var(--main-color);
+   margin-top: 0px;
+   padding-top: 94px;
+   padding-bottom: 94px;
+   outline: 2px solid red;
 }
 
 
@@ -175,6 +184,7 @@ ul {list-style: none;}
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color:var(--color-text);
+   
 }
 
 .button{
@@ -188,6 +198,11 @@ ul {list-style: none;}
    line-height: calc(30/16);
    letter-spacing: 0.06em;
    color: var(--color-text);
+   min-width: 216px;
+   min-height: 50px;
+   text-align: center;
+   display: inline-block;
+   border-radius: 5px;
 }
 
 .section{
