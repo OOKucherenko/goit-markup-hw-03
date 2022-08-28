@@ -21,7 +21,7 @@
 body {
   font-family: var(--main-font);
   color: var(--main-txt-сl);
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /*header*/
@@ -40,7 +40,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .container > .nav {
@@ -197,7 +197,7 @@ ul {
   margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /*h1*/
@@ -319,7 +319,7 @@ ul {
   margin-top: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .list-link {
