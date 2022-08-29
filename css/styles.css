@@ -28,27 +28,32 @@ body {
 
 .header {
   color: var(--header-color);
-  display: flex;
-  margin-left: auto;
-  border: 1px solid #ececec;
+  /*display: flex;*/
+  /*margin-left: auto;*/
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  align-items: center;
   margin: 0 auto;
   /* outline: 2px solid red; */
 }
 
-.container > .nav {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.container > .list {
+.header > .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header > .list {
   display: flex;
   align-items: center;
 }
@@ -86,11 +91,12 @@ a {
 
 .list {
   display: flex;
-  margin-top: 32px;
+  /*gap: 30px;*/
+  /*margin-top: 32px;
   margin-bottom: 32px;
   margin-right: -30px;
   /* margin-left: auto; */
-  padding: 0;
+  /*padding: 0;*/
 }
 
 .portfolio-list {
@@ -142,6 +148,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link:hover {
@@ -193,10 +201,12 @@ ul {
 
 .section-main {
   background: var(--main-color);
-  margin-top: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /*margin-top: 0px;
   margin-bottom: 94px;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px;*/
   /* outline: 2px solid red; */
 }
 
@@ -233,9 +243,8 @@ ul {
 }
 
 .section {
-  /*padding-top: 94px;*/
-  /*padding-bottom: 94px;*/
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-section {
@@ -252,13 +261,17 @@ ul {
 }
 /*h2*/
 
-.list-specialty {
-  margin: 0;
-}
+/*.list-specialty {
+  margin-right: -30px;
+}*/
 
 .specialty-item {
   width: 270px;
 }
+
+/* .specialty-item:last-child {
+  margin-right: 0;
+} */
 
 .subject {
   font-weight: 700;
@@ -267,6 +280,9 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--icon-text);
+  margin-bottom: 10px;
+  margin: 0;
+  
 }
 
 .text {
@@ -274,12 +290,15 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--link-text);
+  margin: 0;
 }
 
-.dignity {
-  display: flex;
-  flex-direction: column;
-}
+ .list-dignity{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+ }
 
 .title-section {
   font-weight: 700;
@@ -293,19 +312,19 @@ ul {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.list-dignity {
-  margin: 0 -30px 0 0;
-}
+ 
 
 .list-item {
-  background: var(--color-text);
+  /*background: var(--color-text);
   border: 1px solid #eeeeee;
   background: var(--color-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  text-align: left;
+  text-align: left;*/
   margin-right: 30px;
+  
+  
 }
 
 .img {
@@ -322,12 +341,18 @@ ul {
   /* outline: 2px solid red; */
 }
 
-.list-link {
+/*.list-link {
   display: flex;
   margin: 0 -30px 0 0;
-}
+}*/
+
 .comand-item {
   width: 100%;
+}
+
+.dignity{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .img-list {
@@ -344,6 +369,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--icon-text);
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .text-list {
@@ -351,6 +378,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-text);
+  margin: 0;
 }
 
 .btn {
@@ -398,7 +426,7 @@ ul {
 /*footer*/
 
 .footer {
-  padding: 60px 0 60px 215px;
+  padding: 60px 0;
   background: var(--main-color);
 }
 
@@ -417,8 +445,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-text);
   font-style: normal;
-  width: 231px;
-  height: 81px;
+ 
   margin-top: 20px;
 }
 
@@ -427,6 +454,8 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-text);
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .list-city {
@@ -434,7 +463,17 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-.link-footer,
+
+.link-footer{
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
 .link-tel-footer {
   font-size: 14px;
   line-height: calc(24 / 14);
