@@ -87,6 +87,7 @@ a {
   margin-top: 0;
   margin-bottom: 34px;
   padding: 0;
+  gap: 8px;
 }
 
 .list {
@@ -109,7 +110,7 @@ a {
 
 .portfolio-item {
   width: 370px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-text {
@@ -390,8 +391,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--icon-text);
-  cursor: pointer;
-  margin-right: 8px;
+  cursor: pointer; 
   border: none;
 }
 
