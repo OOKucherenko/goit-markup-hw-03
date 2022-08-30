@@ -117,6 +117,9 @@ a {
 
 .portfolio-text {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee; 
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .list-nav {
@@ -169,7 +172,6 @@ ul {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  padding-right: 50px;
 
   color: var(--link-text);
 }
@@ -282,8 +284,9 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--icon-text);
-  margin-bottom: 10px;
   margin: 0;
+  margin-bottom: 10px;
+  
 }
 
 .text {
@@ -301,6 +304,10 @@ ul {
   margin: 0;
 }
 
+.section-summary {
+  padding-bottom: 94px;
+}
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
@@ -314,7 +321,7 @@ ul {
   margin-top: 0px;
 }
 
-.list-item {
+/*.list-item {
   /*background: var(--color-text);
   border: 1px solid #eeeeee;
   background: var(--color-text);
@@ -323,7 +330,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   text-align: left;*/
   /* margin-right: 30px; */
-}
+
 
 .img {
   display: block;
@@ -348,7 +355,7 @@ ul {
 }*/
 
 .dignity {
-  /*padding-top: 30px;*/
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
